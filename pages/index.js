@@ -5,7 +5,7 @@ import { Footerbar } from "../components/Footer";
 import Head from "next/head";
 import { HelloMe } from "@/components/HelloMe";
 import { Card } from "@/components/Card";
-import { useState } from "react";
+
 
 const Cards = [
   {
