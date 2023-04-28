@@ -2,26 +2,111 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  #__next {
+    height: 100%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .container {
+    color: #e5e5e5;
+    font-size: 2.26rem;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .animation {
+    height: 50px;
+    overflow: hidden;
+    margin-left: 1rem;
+  }
+
+  .animation > div > div {
+    height: 3rem;
+    margin-bottom: 3rem;
+    display: inline-block;
+  }
+
+  .animation div:first-child {
+    animation: text-animation 10s infinite;
+  }
+
+  @keyframes text-animation {
+    0% {
+      margin-top: 0;
+    }
+
+    15% {
+      margin-top: -6rem;
+    }
+
+    30% {
+      margin-top: -12rem;
+    }
+    50% {
+      margin-top: -18rem;
+    }
+    65% {
+      margin-top: -12rem;
+    }
+
+    80% {
+      margin-top: -6rem;
+    }
+
+    100% {
+      margin-top: 0;
+    }
+  }
 }
+
+@layer base {
+  .heartbeatsAnimation {
+    animation: heartbeats 10s ease-in-out infinite;
+  }
+
+  @keyframes
+    heartbeats {
+      0% {
+        transform: translateY(1px);
+        
+      }
+      15% {
+        transform: translateY(-1px);
+       
+      }
+      30% {
+        transform: translateY(1px);
+        
+      }
+      45% {
+        transform: translateY(-1px);
+        
+      }
+      60% {
+        transform: translateY(1px);
+        
+      }
+
+      75% {
+        transform: translateY(-1px);
+        
+      }
+      100% {
+        transform: translateY(1px);
+    
+      }
+    }
+  };
+
