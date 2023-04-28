@@ -13,7 +13,7 @@ const Cards = [
     description:
       "Création d'un site pour photographe avec Next.js et TailwindCSS. Grace a un CMS Headless (Contentful), le photographe peu gerer ses photos, ses albums, ses tarifs, etc...",
     image: "/photowebsitegallery.png",
-    link: "https://www.google.com",
+    link: "https://photowebsite-studi.netlify.app/",
   },
   {
     title: "FrontEndMentor",
@@ -32,7 +32,6 @@ const Cards = [
 ];
 
 export default function Home() {
- 
   return (
     <div className="min-h-full flex flex-col  bg-abstract1 bg-fixed bg-no-repeat">
       <Head>
@@ -61,11 +60,9 @@ export default function Home() {
             <span className="text-4xl font-bold">Mes projets</span>
           </h2>
 
-          <div className="flex h-full w-full flex-wrap justify-evenly m-6 ">
+          <div className="flex h-full w-full flex-wrap justify-evenly m-6 gap-5">
             {Cards.map((card, idx) => (
-              <Card key={idx} {...card} 
-              
-                />
+              <Card key={idx} {...card} />
             ))}
           </div>
         </div>
