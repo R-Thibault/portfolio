@@ -3,7 +3,7 @@ import React from "react";
 export function HelloMe() {
   return (
     <>
-      <div className=" uppercase flex items-center justify-between flex-col text-3xl flex-wrap z-20 w-full">
+      <div className=" uppercase flex items-center justify-between flex-col text-3xl flex-wrap z-20 w-full m-4">
         <div className="flex flex-col lg:flex-row w-full items-center justify-center mx-auto">
         <p className="uppercase text-white ">Bonjour ! 👋 Je suis</p>
         <section className="animation ">
@@ -21,14 +21,14 @@ export function HelloMe() {
           </div>
         </section>
         </div>
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center mt-2">
         <p className="text-xl space-y-2 md:w-[40vw] w-[60vw] text-white">
                 Développeur Web, curieux et passioné par le développement web et
                 l'intelligence artificielle.
               </p>
               <a
                 href="#"
-                className="inline-flex items-center text-lg text-blue-600 dark:text-blue-500 hover:underline"
+                className="inline-flex items-center text-lg text-white dark:text-blue-500 hover:underline mt-2"
               >
                 Read more
                 <svg

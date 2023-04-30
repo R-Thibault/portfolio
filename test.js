@@ -51,3 +51,13 @@ className="w-full h-fit m-5 flex flex-col  gap-2  shadow md:flex-row  hover:bg-g
     </div>
   </div>
 </div>
+
+
+#portrait{
+  --s: 10px; /* control the size */
+  padding: var(--s);
+  border: calc(2*var(--s)) solid #0000;
+  outline: 1px solid #000;
+  outline-offset: calc(-1*var(--s));
+  background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#000 0);
+}

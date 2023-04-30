@@ -1,10 +1,11 @@
 import { Navbar } from "flowbite-react";
+import Image from "next/image";
 
 export function Header() {
   return (
     <>
-      <Navbar className="min-w-full h-12" fluid={true}>
-        <Navbar.Brand href="https://flowbite.com/">
+      <Navbar className="min-w-full h-12 " fluid={true}>
+        <Navbar.Brand className="">
           <span className="self-center whitespace-nowrap text-xl font-bold dark:text-white uppercase">
             Port
           </span>
@@ -16,12 +17,29 @@ export function Header() {
           </span>
         </Navbar.Brand>
         <Navbar.Toggle />
-        <Navbar.Collapse>
-          <Navbar.Link href="/">
-            Home
+        
+        <Navbar.Collapse className="">
+          <Navbar.Link href="/" className="">
+            Acceuil
           </Navbar.Link>
-          <Navbar.Link href="/about">About</Navbar.Link>
+          <Navbar.Link href="/about" className="">A propos</Navbar.Link>
           </Navbar.Collapse>
+          <Navbar.Brand className="gap-5">
+          
+            <Image 
+            src="/github-mark.png" 
+            alt="Github"
+            width={30}
+            height={30}
+          
+            />
+            <Image 
+            src="/linkedin.png"
+            alt="Linkedin"
+            width={30}
+            height={30}
+            />
+          </Navbar.Brand>
       </Navbar>
     </>
   );

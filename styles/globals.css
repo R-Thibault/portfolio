@@ -16,6 +16,10 @@
 }
 
 @layer components {
+  nav > div:first-child{
+    justify-content: space-around;
+  }
+
   .container {
     color: #e5e5e5;
     font-size: 2.26rem;
@@ -72,6 +76,12 @@
 }
 
 @layer base {
+  #portrait{
+    box-shadow:
+    -50px -50px 0 -40px #FF0000,
+    50px 50px 0 -40px #FF0000;
+  }
+
   .heartbeatsAnimation {
     animation: heartbeats 10s ease-in-out infinite;
   }

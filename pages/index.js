@@ -5,6 +5,40 @@ import { Footerbar } from "../components/Footer";
 import Head from "next/head";
 import { HelloMe } from "@/components/HelloMe";
 import { Card } from "@/components/Card";
+import { CV } from "../components/Timeline";
+import { Skills } from "../components/Skills";
+
+const skill = [
+  {
+    domain: "HTML",
+    progress: 90,
+  },
+  {
+    domain: "CSS",
+    progress: 80,
+  },
+  {
+    domain: "Javascript",
+    progress: 65,
+  },
+  {
+    domain: "React",
+    progress: 60,
+  },
+  {
+    domain: "Next",
+    progress: 60,
+  },
+  {
+    domain: "Tailwind",
+    progress: 65,
+  },
+  {
+    domain: "Php",
+    progress: 65,
+  },
+
+];
 
 
 const Cards = [
@@ -14,6 +48,7 @@ const Cards = [
       "Création d'un site pour photographe avec Next.js et TailwindCSS. Grace a un CMS Headless (Contentful), le photographe peu gerer ses photos, ses albums, ses tarifs, etc...",
     image: "/photowebsitegallery.png",
     link: "https://photowebsite-studi.netlify.app/",
+    git : "https://github.com/R-Thibault/Photowebsite-eval.git",
   },
   {
     title: "FrontEndMentor",
@@ -41,23 +76,25 @@ export default function Home() {
       <Header />
 
       <main className="flex flex-col items-center min-h-screen space-y-4 grow z-20">
-        <div className="h-screen w-full flex flex-col-reverse md:flex-row items-center justify-around gap-10">
-          <div className="flex items-center z-20 space-y-2 basis-1/2">
+        <div className="h-screen w-full flex flex-col-reverse md:flex-row items-center justify-around mx-auto">
+          <div className="flex items-center z-20 space-y-2 md:basis-1/4">
             <HelloMe className="" />
           </div>
-          <div className="flex justify-center basis-1/2">
+          <div className="">
             <Image
+            id="portrait"
               src="/photo2.png"
               width={600}
-              height={700}
+              height={600}
               alt="photo moi"
               className="z-40 mt-10"
             />
           </div>
         </div>
-        <div className=" w-full h-full flex items-center flex-col">
-          <h2>
-            <span className="text-4xl font-bold">Mes projets</span>
+        <div className="w-11/12">
+        <div className=" flex items-center flex-col border-t-2">
+          <h2 className="text-6xl font-bold m-10 text-white">
+            Mes projets
           </h2>
 
           <div className="flex h-full w-full flex-wrap justify-evenly m-6 gap-5">
@@ -65,6 +102,31 @@ export default function Home() {
               <Card key={idx} {...card} />
             ))}
           </div>
+        </div>
+        <div className="flex flex-col items-center justify-evenly text-white border-t-2">
+        <h2 className="text-6xl font-bold m-10">Mon parcours</h2>
+        <p className="text-center text-xl w-[80vw]">
+          Je suis un développeur web junior et je suis passionné
+          par le développement web. J'ai commencé à apprendre le développement
+          web en autodidacte en 2021, j'ai ensuite sauté le pas et commencé une
+          formation en 2022 pour devenir développeur web et web mobile.
+          Actuellement, j'aimerai continué à apprendre, je souhaiterai poursuivre mes études en alternance dans le développement web.
+        </p>
+        
+        <div className="flex flex-col lg:flex-row min-w-full min-h-full items-center justify-evenly  gap-10 text-white text-xl">
+          <div className="flex flex-col h-60 lg:h-[24em] justify-evenly items-center">
+            <h2>
+              <span className="text-4xl font-bold">Mes compétences</span>
+            </h2>
+            <div className="flex lg:flex-col flex-wrap min-h-full items-center justify-evenly gap-1">
+              {skill.map((Skill) => (
+                <Skills key={Skill.domain} {...Skill} />
+              ))}
+            </div>
+          </div>
+          <CV/>
+        </div>
+        </div>
         </div>
       </main>
 

@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-full bg-abstract1 bg-fixed bg-no-repeat">
       <Head>
-        <title>Thibault Rossa développeur web portfolio | About</title>
+        <title>Thibault Rossa développeur web portfolio | A propos de moi</title>
       </Head>
 
       <Header />
@@ -50,7 +50,7 @@ export default function Home() {
       <main className="flex min-h-screen w-full flex-col items-center justify-evenly text-white">
         <h1 className="text-6xl font-bold mt-10">Mon parcours</h1>
         <p className="text-center text-lg w-[80vw]">
-          Je suis un développeur web junior, j'ai 33 ans et je suis passionné
+          Je suis un développeur web junior et je suis passionné
           par le développement web. J'ai commencé à apprendre le développement
           web en autodidacte en 2021, j'ai ensuite sauté le pas et commencé une
           formation en 2022 pour devenir développeur web et web mobile.
