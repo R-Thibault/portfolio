@@ -103,9 +103,9 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="flex flex-col items-center justify-evenly text-white border-t-2">
-        <h2 className="text-6xl font-bold m-10">Mon parcours</h2>
-        <p className="text-center text-xl w-[80vw]">
+        <div className="flex flex-col min-h-screen items-center justify-evenly text-white border-t-2 mx-2">
+        <h2 className="text-6xl font-bold m-10" id="info" >Mon parcours</h2>
+        <p className="text-center text-xl w-[80vw] my-6">
           Je suis un développeur web junior et je suis passionné
           par le développement web. J'ai commencé à apprendre le développement
           web en autodidacte en 2021, j'ai ensuite sauté le pas et commencé une
@@ -115,10 +115,10 @@ export default function Home() {
         
         <div className="flex flex-col lg:flex-row min-w-full min-h-full items-center justify-evenly  gap-10 text-white text-xl">
           <div className="flex flex-col h-60 lg:h-[24em] justify-evenly items-center">
-            <h2>
-              <span className="text-4xl font-bold">Mes compétences</span>
+            <h2 className="text-4xl font-bold my-2">
+              Mes compétences
             </h2>
-            <div className="flex lg:flex-col flex-wrap min-h-full items-center justify-evenly gap-1">
+            <div className="flex lg:flex-col flex-wrap min-h-full items-center justify-evenly gap-6 lg:gap-2">
               {skill.map((Skill) => (
                 <Skills key={Skill.domain} {...Skill} />
               ))}

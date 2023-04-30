@@ -3,8 +3,8 @@ import React from "react";
 export function HelloMe() {
   return (
     <>
-      <div className=" uppercase flex items-center justify-between flex-col text-3xl flex-wrap z-20 w-full m-4">
-        <div className="flex flex-col lg:flex-row w-full items-center justify-center mx-auto">
+      <div className="  flex items-center justify-between flex-col text-3xl flex-wrap z-20 w-full m-2">
+        <div className="flex flex-col lg:flex-row w-full items-center justify-center">
         <p className="uppercase text-white ">Bonjour ! 👋 Je suis</p>
         <section className="animation ">
           <div>
@@ -27,10 +27,10 @@ export function HelloMe() {
                 l'intelligence artificielle.
               </p>
               <a
-                href="#"
+                href="#info"
                 className="inline-flex items-center text-lg text-white dark:text-blue-500 hover:underline mt-2"
               >
-                Read more
+                En apprendre plus
                 <svg
                   className="w-6 h-6 ml-1"
                   fill="currentColor"

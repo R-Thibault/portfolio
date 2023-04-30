@@ -8,7 +8,7 @@ export function Skills(Skill) {
     labelProgress={true}
     textLabel={Skill.domain}
     labelText={true}
-    size="lg"
+    size="xl"
   />
   </div>
   );

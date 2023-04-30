@@ -20,9 +20,9 @@ export function Header() {
         
         <Navbar.Collapse className="">
           <Navbar.Link href="/" className="">
-            Acceuil
+            Accueil
           </Navbar.Link>
-          <Navbar.Link href="/about" className="">A propos</Navbar.Link>
+          <Navbar.Link href="/contact" className="">Contact</Navbar.Link>
           </Navbar.Collapse>
           <Navbar.Brand className="gap-5">
           

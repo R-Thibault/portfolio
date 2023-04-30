@@ -78,8 +78,8 @@
 @layer base {
   #portrait{
     box-shadow:
-    -50px -50px 0 -40px #FF0000,
-    50px 50px 0 -40px #FF0000;
+    -50px -50px 0 -40px rgb(148 163 184),
+    50px 50px 0 -40px rgb(148 163 184);
   }
 
   .heartbeatsAnimation {

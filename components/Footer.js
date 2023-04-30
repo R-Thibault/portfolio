@@ -4,7 +4,7 @@ import Image from "next/image";
 export function Footerbar() {
   return (
     <>
-      <Footer container={true} className="rounded-none min-h-20 z-20">
+      <Footer container={true} className="rounded-none h-12 z-20">
         <Footer.Copyright href="#" by="" year={2022} />
         <Footer.LinkGroup>
           <Footer.Link href="https://github.com/R-Thibault"><Image 
@@ -22,8 +22,9 @@ export function Footerbar() {
             /></Footer.Link>
         </Footer.LinkGroup>
         <Footer.LinkGroup>
-          <Footer.Link href="#">About</Footer.Link>
-          <Footer.Link href="#">Privacy Policy</Footer.Link>
+        <Footer.Link href="/">Accueil</Footer.Link>
+          <Footer.Link href="/contact">Contact</Footer.Link>
+          <Footer.Link href="/policy">Privacy Policy</Footer.Link>
         </Footer.LinkGroup>
       </Footer>
     </>
