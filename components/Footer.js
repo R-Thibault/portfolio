@@ -5,7 +5,7 @@ export function Footerbar() {
   return (
     <>
       <Footer container={true} className="rounded-none h-12 z-20">
-        <Footer.Copyright href="#" by="" year={2022} />
+        <Footer.Copyright href="#" by="thibault Rossa. Tous droits réservés." year={2022}  />
         <Footer.LinkGroup>
           <Footer.Link href="https://github.com/R-Thibault"><Image 
             src="/github-mark.png" 
