@@ -15,11 +15,11 @@ const skill = [
   },
   {
     domain: "CSS",
-    progress: 80,
+    progress: 90,
   },
   {
     domain: "Javascript",
-    progress: 65,
+    progress: 70,
   },
   {
     domain: "React",
@@ -31,7 +31,7 @@ const skill = [
   },
   {
     domain: "Tailwind",
-    progress: 65,
+    progress: 75,
   },
   {
     domain: "Php",

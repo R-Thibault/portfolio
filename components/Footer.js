@@ -24,7 +24,8 @@ export function Footerbar() {
         <Footer.LinkGroup>
         <Footer.Link href="/">Accueil</Footer.Link>
           <Footer.Link href="/contact">Contact</Footer.Link>
-          <Footer.Link href="/policy">Privacy Policy</Footer.Link>
+          <Footer.Link href="/mentions">Mentions légales</Footer.Link>
+          <Footer.Link href="/policy">Politique de confidentialité</Footer.Link>
         </Footer.LinkGroup>
       </Footer>
     </>
