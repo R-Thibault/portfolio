@@ -11,7 +11,7 @@ export function CV() {
           <Timeline.Time className="text-white text-xl">Actuellement</Timeline.Time>
           <Timeline.Title className="text-white text-xl">Developpeur web</Timeline.Title>
           <Timeline.Body className="text-white text-lg" >
-            En parallele de mes études, je suis en recherche d'une première expérience en tant que développeur web, ou une alternance/formation dans le domaine de l'intelligence artificielle.
+            En parallèle de mes études, je suis en recherche d'une première expérience en tant que développeur web, ou une alternance/formation dans le domaine de l'intelligence artificielle.
             </Timeline.Body>
         </Timeline.Content>
         
@@ -32,7 +32,7 @@ export function CV() {
           <Timeline.Time className="text-white text-xl">2012 - 2023</Timeline.Time>
           <Timeline.Title className="text-white text-xl">Etudes et travail en injection plastique</Timeline.Title>
           <Timeline.Body className="text-white text-lg">
-           Bac pro et BTS en alternace.Puis 6 ans d'expérience dans l'injection plastique. Technicien, chef d'équipe et technicien methode.
+           Bac pro et BTS en alternance.Puis 6 ans d'expérience dans l'injection plastique. Technicien, chef d'équipe et technicien methode.
           </Timeline.Body>
         </Timeline.Content>
       </Timeline.Item>
