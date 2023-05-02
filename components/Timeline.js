@@ -4,7 +4,7 @@ import { HiCalendar } from "react-icons/hi";
 export function CV() {
   return (
     <div className="text-white  m-10">
-    <Timeline className="w-[50vw] mt-10 ">
+    <Timeline className="md:w-[50vw] mt-10 ">
       <Timeline.Item>
         <Timeline.Point icon={HiCalendar} />
         <Timeline.Content>

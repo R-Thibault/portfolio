@@ -73,50 +73,52 @@
       margin-top: 0;
     }
   }
-}
-
-@layer base {
-  #portrait{
-    box-shadow:
-    -50px -50px 0 -40px rgb(148 163 184),
-    50px 50px 0 -40px rgb(148 163 184);
-  }
 
   .heartbeatsAnimation {
-    animation: heartbeats 10s ease-in-out infinite;
+    animation: heartbeats 2s ease-in-out infinite;
   }
 
   @keyframes
     heartbeats {
       0% {
-        transform: translateY(1px);
+        transform: translateY(5px);
         
       }
       15% {
-        transform: translateY(-1px);
+        transform: translateY(-5px);
        
       }
       30% {
-        transform: translateY(1px);
+        transform: translateY(5px);
         
       }
       45% {
-        transform: translateY(-1px);
+        transform: translateY(-5px);
         
       }
       60% {
-        transform: translateY(1px);
+        transform: translateY(5px);
         
       }
 
       75% {
-        transform: translateY(-1px);
+        transform: translateY(-5px);
         
       }
-      100% {
-        transform: translateY(1px);
+      500% {
+        transform: translateY(5px);
     
       }
     }
+}
+
+@layer base {
+  #portrait{
+    box-shadow:
+    -50px -50px 0 -50px rgb(148 163 184),
+    50px 50px 0 -50px rgb(148 163 184);
+  }
+
+
   };
 

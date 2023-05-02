@@ -2,7 +2,7 @@ import { Progress } from "flowbite-react";
 
 export function Skills(Skill) {
   return (
-    <div className="w-[20em]">
+    <div className="md:w-[20em] w-[15em]">
     <Progress
     progress={Skill.progress}
     labelProgress={true}

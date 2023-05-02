@@ -58,11 +58,12 @@ const Cards = [
     link: "https://www.frontendmentor.io/profile/R-Thibault",
   },
   {
-    title: "Site de gestion de favoris",
+    title: "Mon portfolio",
     description:
-      "Site, personnel dans un premiere temps, pour gerer ses favoris, par catégorie, par projets, par tags, etc...",
+      "Ce portfolio, crée avec Next.js et TailwindCSS. Il est hébergé sur Vercel.", 
     image: "/ComingSoon.jpg",
-    link: null,
+    
+    git : "https://github.com/R-Thibault/portfolio.git",
   },
 ];
 
@@ -76,18 +77,18 @@ export default function Home() {
       <Header />
 
       <main className="flex flex-col items-center min-h-screen space-y-4 grow z-20">
-        <div className="h-screen w-full flex flex-col-reverse md:flex-row items-center justify-around mx-auto">
+        <div className="md:h-screen h-full w-full flex flex-col-reverse md:flex-row items-center justify-around mx-auto">
           <div className="flex items-center z-20 space-y-2 md:basis-1/4">
             <HelloMe className="" />
           </div>
-          <div className="">
+          <div className="p-2">
             <Image
             id="portrait"
-              src="/photo2.png"
+              src="/photo-rev.jpg"
               width={600}
               height={600}
               alt="photo moi"
-              className="z-40 mt-10"
+              className="z-40 md:my-5 rounded-full"
             />
           </div>
         </div>

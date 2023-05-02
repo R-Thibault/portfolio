@@ -4,9 +4,9 @@ export function HelloMe() {
   return (
     <>
       <div className="  flex items-center justify-between flex-col text-3xl flex-wrap z-20 w-full m-2">
-        <div className="flex flex-col lg:flex-row w-full items-center justify-center">
-        <p className="uppercase text-white ">Bonjour ! 👋 Je suis</p>
-        <section className="animation ">
+        <div className="flex flex-col lg:flex-row w-full items-center ">
+        <p className="uppercase text-white ">Bonjour ! <span className="heartbeatsAnimation">👋</span> Je suis</p>
+        <section className="animation">
           <div>
             <div className="uppercase text-white ">Thibault Rossa</div>
           </div>
