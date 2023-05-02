@@ -115,14 +115,14 @@ export default function Home() {
         </p>
         
         <div className="flex flex-col lg:flex-row min-w-full min-h-full items-center justify-evenly  gap-10 text-white text-xl">
-          <div className="flex flex-col h-60 lg:h-[24em] justify-evenly items-center">
+          <div className="flex flex-col lg:h-[24em] justify-evenly items-center">
             <h2 className="text-4xl font-bold my-2">
               Mes compétences
             </h2>
-            <div className="flex lg:flex-col flex-wrap min-h-full items-center justify-evenly gap-6 lg:gap-2">
-              {skill.map((Skill) => (
-                <Skills key={Skill.domain} {...Skill} />
-              ))}
+            <div className="flex flex-col h-full gap-6 w-full">
+              
+                <Skills />
+              
             </div>
           </div>
           <CV/>
