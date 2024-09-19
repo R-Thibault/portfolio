@@ -9,6 +9,7 @@ export function Skills() {
           <Image src="/html-logo.png" alt="html" width={60} height={50} />
           <Image src="/css-logo.png" alt="css" width={80} height={50} />
           <Image src="/js-logo.png" alt="js" width={60} height={50} />
+          <Image src="/typescript-logo.svg" alt="js" width={60} height={50} />
           <Image src="/php-logo.png" alt="php" width={70} height={50} />
           <Image src="/sql-logo.png" alt="sql" width={80} height={30} />
         </div>
