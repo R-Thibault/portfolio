@@ -1,0 +1,20 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # image: mon-portfolio-nextjs
+    environment:
+      - NODE_ENV=production
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.portfolio.rule=Host(`portfolio.localhost`)"
+      # - "traefik.http.routers.portfolio.entrypoints=websecure"
+      # - "traefik.http.routers.portfolio.tls.certresolver=myresolver"
+      # - "traefik.http.services.portfolio.loadbalancer.server.port=3000"
+
+networks:
+  web:
+    external: true
