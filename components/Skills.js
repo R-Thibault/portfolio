@@ -9,7 +9,6 @@ export function Skills() {
           <Image src="/html-logo.png" alt="html" width={60} height={50} />
           <Image src="/css-logo.png" alt="css" width={80} height={50} />
           <Image src="/js-logo.png" alt="js" width={60} height={50} />
-          <Image src="/wp-logo.png" alt="wordpress" width={70} height={50} />
           <Image src="/php-logo.png" alt="php" width={70} height={50} />
           <Image src="/sql-logo.png" alt="sql" width={80} height={30} />
         </div>
@@ -20,6 +19,12 @@ export function Skills() {
           <div className="flex justify-evenly ">
             <Image src="/react-logo.png" alt="react" width={50} height={50} />
             <Image src="/next-logo.png" alt="next" width={50} height={50} />
+            <Image
+              src="/symfony-logo.png"
+              alt="boostrap"
+              width={50}
+              height={50}
+            />
             <Image
               src="/bootstrap-logo.png"
               alt="boostrap"
@@ -45,8 +50,8 @@ export function Skills() {
                 height={50}
               />
               <Image
-                src="/vscode-logo.png"
-                alt="vscode"
+                src="/docker-logo.png"
+                alt="github"
                 width={50}
                 height={50}
               />
