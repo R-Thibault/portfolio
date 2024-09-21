@@ -45,8 +45,8 @@ const Cards = [
     description:
       "Création d'un site pour photographe avec Next.js et TailwindCSS. Grace a un CMS Headless (Contentful), le photographe peu gerer ses photos, ses albums, ses tarifs, etc...",
     image: "/photowebsitegallery.png",
-    link: "https://photowebsite-studi.netlify.app/",
-    git: "https://github.com/R-Thibault/Photowebsite-eval.git",
+    link: "https://photowebsite.thibault-rossa.fr/",
+    git: "https://github.com/R-Thibault/contentful-photowebsite.git",
   },
   {
     title: "FrontEndMentor",
