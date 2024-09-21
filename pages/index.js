@@ -57,8 +57,7 @@ const Cards = [
   },
   {
     title: "Mon portfolio",
-    description:
-      "Ce portfolio, crée avec Next.js et TailwindCSS. Il est hébergé sur Vercel.",
+    description: "Ce portfolio, crée avec Next.js et TailwindCSS.",
     image: "/portfolio-screenshot.png",
 
     git: "https://github.com/R-Thibault/portfolio.git",
